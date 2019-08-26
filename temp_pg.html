@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lattitude - Hawkins</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function setIframeSource() {
+          var theSelect = document.getElementById('mapselect');
+          var theIframe = document.getElementById('myIframe');
+          var theUrl;
+          
+          theUrl = theSelect.options[theSelect.selectedIndex].value;
+          theIframe.src = theUrl;
+        }
+    </script>
+    
+</head>
+<body>
+<div class="container-fluid">
+ <div class="row" id="header">
+  <div class="col">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                </a>
+        <div class="dropdown-menu ml-auto" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-text" id="top">
+            <a class="dropdown-item" href="temp_pg.html">Temperature</a>
+            <a class="dropdown-item" href="hum_pg.html">Humidity</a>
+            <a class="dropdown-item" href="cloud_pg.html">Cloud Cover</a>
+            <a class="dropdown-item" href="wind_pg.html">Wind</a>
+        </div>
+        </div>
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons_pg.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data_pg.html">Data</a>
+            </li>
+            </li>
+        </ul>
+    </div>
+    </nav>
+  </div>
+ </div>
+</div>
+<div class="container-fluid" id="main-section">
+        <div class="row" id="body1">
+            <div class="col-lg-6" id="top-left">
+                        <h3 id=>Latitude vs. Max Temerature</h3>
+                        <hr>
+                    <div class="text-center">
+                    <img src="./img/LatvTemp.png" class="rounded" alt="Latitude vs. Temperature" id="image1">
+                    </div>
+                    <p>
+
+                    </p>
+                    <p>
+                        As we can see from the scatter plot the temperature rises the closer we get to 0 deg latitude (equator).  It should also be noticed the there is a slight bias to the right of the equator, this would translate into Northern latitudes.  To explain this bias we can see that the date of the dataset is August, or Summer in the Northern hemisphere.  The tilt of the earth axis during the northern summer months results in warmer temperatures.  The opposite can be expected during winter months in the Northern hemisphere, we would see a slight shift of peak temperature further to the left of the x-axis which represents a shift to the south.
+                    </p>
+                   
+            </div>
+
+            <div class="col" id="top-right">
+                    <h3>Visualizations</h3>
+                    <hr>
+                    <div class="row" id="right_top">
+                        <div class="col-md-6" id="viz_tl">
+                            <a class="nav-link" href="temp_pg.html"><img src="./img/LatvTemp.png" class="img-fluid img-thumbnail" alt="Latitude vs. Temperature"></a>
+                        </div>
+                        <div class="col-md-6" id="viz_tr">
+                            <a class="nav-link" href="hum_pg.html"><img src="./img/LatvHum.png" class="img-fluid img-thumbnail" alt="Latitude vs. Humidity"></a>
+                        </div>
+                    </div>
+                    <div class="row" id="right_btm">
+                        <div class="col-md-6" id="viz_bl">
+                            <a class="nav-link" href="cloud_pg.html"><img src="./img/LatvCloud.png" class="img-fluid img-thumbnail" alt="Latitude vs. Cloud Cover"></a>
+                        </div>
+                        <div class="col-md-6" id="viz_br">
+                            <a class="nav-link" href="wind_pg.html"><img src="./img/LatvWind.png" class="img-fluid img-thumbnail" alt="Latitude vs. Wind Speed"></a>
+                        </div>
+                    </div>
+                  
+            </div>
+        </div>
+
+
+    
+</div>
+</body>
+</html>
