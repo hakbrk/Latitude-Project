@@ -95,7 +95,7 @@ a:hover
     color: black !important;
     box-sizing: border-box !important;
     border-radius: .5%;
-    margin:10px;
+    margin:10px !important;
     padding: 15px;
 }
 
