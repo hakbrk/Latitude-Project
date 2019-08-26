@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Economic Freedom - Hawkins</title>
+    <title>Lattitude - Hawkins</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
  <div class="row" id="header">
   <div class="col">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Economic Freedom</a>
+        <a class="navbar-brand" href="index.html">Lattitude</a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,9 +41,10 @@
                 </a>
         <div class="dropdown-menu ml-auto" aria-labelledby="navbarDropdownMenuLink">
         <div class="dropdown-text" id="top">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="temp_pg.html">Temperature</a>
+            <a class="dropdown-item" href="hum_pg.html">Humidity</a>
+            <a class="dropdown-item" href="cloud_pg.html">Cloud Cover</a>
+            <a class="dropdown-item" href="wind_pg.html">Wind</a>
         </div>
         </div>
             <li class="nav-item">
@@ -60,14 +61,34 @@
  </div>
 </div>
 <div class="container-fluid" id="main-section">
+            <div class="col" id="top-right">
+                    <h3>Comparisons Latitude vs. X</h3>
+                    <hr>
+                    <p>
 
-
-
-
-
-
-
-
+                    </p>
+                    <p>
+                        Click any plot to get an in-depth analysis.
+                    </p>
+                    <div class="row" id="right_top">
+                        <div class="col-md-6" id="viz_tl">
+                            <a class="nav-link" href="temp_pg.html"><img src="./img/LatvTemp.png" class="img-fluid img-thumbnail" alt="Latitude vs. Temperature"></a>
+                        </div>
+                        <div class="col-md-6" id="viz_tr">
+                            <a class="nav-link" href="hum_pg.html"><img src="./img/LatvHum.png" class="img-fluid img-thumbnail" alt="Latitude vs. Humidity"></a>
+                        </div>
+                    </div>
+                    <div class="row" id="right_btm">
+                        <div class="col-md-6" id="viz_bl">
+                            <a class="nav-link" href="cloud_pg.html"><img src="./img/LatvCloud.png" class="img-fluid img-thumbnail" alt="Latitude vs. Cloud Cover"></a>
+                        </div>
+                        <div class="col-md-6" id="viz_br">
+                            <a class="nav-link" href="wind_pg.html"><img src="./img/LatvWind.png" class="img-fluid img-thumbnail" alt="Latitude vs. Wind Speed"></a>
+                        </div>
+                    
+                  
+            </div>
+        </div>
 
 
     
